@@ -5,7 +5,7 @@ app = express();
 app.set('port', process.env.PORT || 3300);
 app.set('views', __dirname + '/views');
 app = config(app);
-mongoose.connect('mongodb://vbodak:inf56/bumb@ds143070.mlab.com:43070/imgploadr');
+mongoose.connect('mongodb://localhost');
 mongoose.connection.on('open', function(){
 	console.log('Mongoose connected.');
 });
